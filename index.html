@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D 公共の福祉 サンドボックス</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #0f172a; font-family: sans-serif; }
+    #info {
+      position: absolute; top: 10px; left: 10px; color: white;
+      background: rgba(0,0,0,0.7); padding: 10px 15px; border-radius: 8px; z-index: 100;
+    }
+  </style>
+  <!-- 3Dを描画するライブラリ（Three.js）を読み込み -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+  <div id="info">
+    <b>3Dリアル・サンドボックス</b><br>
+    画面をドラッグ：視点移動 / クリック：配置
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
